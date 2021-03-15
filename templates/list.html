@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <tr>
+            <th>Amount spent</th>
+            <th>Budget left</th>
+        </tr>
+
+        <tr>
+            <th>{{ spending }}</th>
+            <th>{{ balance }}</th>
+        </tr>
+    </table>
+{% endblock %}

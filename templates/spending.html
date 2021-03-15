@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Record spending
+{% endblock %}
+
+{% block main %}
+    <form action="/spending" method="post">
+        <div class="form-group">
+            <input autofocus class="form-control" name="item" placeholder="Item details" type="text">
+        </div>
+
+        <div class="form-group">
+            <input autofocus class="form-control" name="amount" placeholder="Enter Amount" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Record spending</button>
+    </form>
+{% endblock %}
